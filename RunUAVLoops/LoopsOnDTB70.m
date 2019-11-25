@@ -70,7 +70,7 @@ for dataset_count =1:dataset_num
                     results{1}.startFrame = seq.st_frame;
                     fprintf('fps: %f\n', results{1}.fps);
                     
-                    save([save_res_dir, video_name, '_', tracker_name,num2str(param1),'_',num2str(param2),'_',num2str(param3),'_',num2str(param4)]);
+                    save([save_res_dir, video_name, '_', tracker_name,num2str(param1),'_',num2str(param2),'_',num2str(param3),'_',num2str(param4),'.mat']);
                     % plot precision figure
 %                     show_visualization =false;                                       % ÏÔÊ¾Í¼Æ¬£¨precision_plot£©½á¹û
 %                     precision_plot_save(results{1}.res, seq.ground_truth, video_name, save_pic_dir, show_visualization);

@@ -61,7 +61,7 @@ for tracker_count = 1: tracker_num
         results{1}.startFrame = seq.st_frame;
         fprintf('fps: %f\n', results{1}.fps);
         
-        save([save_res_dir, video_name, '_', tracker_name]);
+        save([save_res_dir, video_name, '_', tracker_name,'.mat']);
         % plot precision figure
         show_visualization =false;                                       % ÏÔÊ¾Í¼Æ¬£¨precision_plot£©½á¹û
         precision_plot_save(results{1}.res, seq.ground_truth, video_name, save_pic_dir, show_visualization);
